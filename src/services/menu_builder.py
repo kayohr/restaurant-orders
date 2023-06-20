@@ -37,12 +37,8 @@ class MenuBuilder:
                 {
                     "dish_name": dish.name,
                     "price": dish.price,
-                    "ingredients": list(
-                        dish.get_ingredients()
-                    ),
-                    "restrictions": list(
-                        dish.get_restrictions()
-                    ),
+                    "ingredients": list(dish.get_ingredients()),
+                    "restrictions": list(dish.get_restrictions()),
                 }
             )
         return menu
